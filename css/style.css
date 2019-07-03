@@ -1,0 +1,65 @@
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 5px;
+    float: right;
+    color: white;
+}
+
+
+.form-wrapper {
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 15px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.form-wrapper fieldset {
+    border: none;
+}
+
+input[type=submit] {
+    padding: 2px;
+    width: 185px;
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+input[type=text] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-wrapper {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type=file] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    background: #ffffff;
+}
