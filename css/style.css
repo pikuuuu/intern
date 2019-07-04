@@ -1,14 +1,16 @@
 .navbar ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
     padding: 10px;
+    background-color: #b86b77;
 }
 
 .navbar li {
     display: inline;
     padding: 5px;
     float: right;
+    font-size: larger;
+    font-family: inherit;
     color: white;
 }
 
@@ -16,11 +18,11 @@
 .form-wrapper {
     max-width: 500px;
     padding: 10px 20px;
-    background: #f4f7f8;
+    background: #f6cfce;
     margin: 15px auto;
     padding: 20px;
-    background: #f4f7f8;
     border-radius: 8px;
+    border: 1px solid black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 
@@ -33,7 +35,7 @@
 input[type=submit] {
     padding: 2px;
     width: 185px;
-    background-color: black;
+    background-color: #b86b77;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -62,4 +64,85 @@ input[type=file] {
     margin: 10px;
     width: 450px;
     background: #ffffff;
+}
+
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+}
+
+.table-wrapper {
+    max-width: 500px;
+    padding-left: 10px;
+    background: #f4f7f8;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.table-wrapper th {
+    padding: 43px;
+    background-color: #b86b77;
+    font-weight: bold;
+}
+
+.table-wrapper td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #f6cfce;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style-type: none;
+    background-color: #f6cfce;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    padding-left: 10px;
+    margin: 15px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    padding: 8px;
+}
+
+ul.breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.breadcrumb li a:hover {
+    background-color: #b86b77;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.modal {
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: block;
+    background-color: #b86b77;
+    font-weight: bold;
+    color: white;
+}
+
+.modal:hover {
+    background-color: #c08081;
 }
