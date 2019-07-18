@@ -1,24 +1,107 @@
-.navbar ul {
-    list-style-type: none;
-    overflow: hidden;
-    padding: 10px;
-    background-color: #b86b77;
-}
-
-.navbar li {
-    display: inline;
-    padding: 5px;
-    float: right;
-    font-size: larger;
-    font-family: inherit;
+.dropbtn {
+    background-color: rgb(95, 94, 94);
     color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 8px;
 }
 
+.navbar {
+    width: 100%;
+    background: rgb(63, 61, 61);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-home {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-aboutus {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-register {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(87, 84, 84);
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(77, 73, 73);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-home:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-aboutus:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-register:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+#pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: rgb(124, 121, 121);
+    color: rgba(0, 0, 0, 0.911);
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(160, 154, 154);
+    border-radius: 5px;
+}
 
 .form-wrapper {
     max-width: 500px;
     padding: 10px 20px;
-    background: #f6cfce;
+    background: #d7dadb;
     margin: 15px auto;
     padding: 20px;
     border-radius: 8px;
@@ -28,17 +111,31 @@
 
 }
 
+.form-wrapper input:invalid {
+    border-color: red;
+}
+
+.form-wrapper input:valid {
+    border-color: green;
+}
+
 .form-wrapper fieldset {
     border: none;
 }
 
 input[type=submit] {
-    padding: 2px;
-    width: 185px;
-    background-color: #b86b77;
+    padding: 10px;
+    width: 450px;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 4px;
+    background-color: rgb(64, 156, 69);
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+input[type=submit]:hover {
+    background-color: rgb(48, 119, 52);
 }
 
 input[type=text] {
@@ -48,7 +145,47 @@ input[type=text] {
     box-sizing: border-box;
     margin: 10px;
     width: 450px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=tel] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=email] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=date] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=time] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-wrapper {
@@ -67,8 +204,9 @@ input[type=file] {
 }
 
 
+
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background.jpeg");
     background-repeat: repeat;
 }
 
@@ -81,25 +219,37 @@ body {
     border-radius: 8px;
     text-align: center;
     border: 1px solid black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .table-wrapper th {
     padding: 43px;
-    background-color: #b86b77;
+    background-color: rgb(68, 67, 67);
     font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
 }
 
 .table-wrapper td {
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: #f6cfce;
+    /* background-color: #f6cfce; */
+    cursor: pointer;
 }
+
+.table-wrapper td:hover {
+    background-color: rgb(128, 125, 125);
+
+}
+
+
 
 ul.breadcrumb {
     padding: 10px 16px;
     list-style-type: none;
-    background-color: #f6cfce;
+    background-color: rgb(100, 97, 97);
     text-align: center;
     max-width: 500px;
     padding: 20px;
@@ -113,36 +263,313 @@ ul.breadcrumb li {
     display: inline;
     font-size: 18px;
     padding: 8px;
+    color: #ffffff;
 }
 
 ul.breadcrumb a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul.breadcrumb li a:hover {
-    background-color: #b86b77;
+    background-color: rgb(63, 62, 62);
 }
 
 
 h3 {
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 20px;
 }
 
-.modal {
+#button {
     text-align: center;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
     display: block;
-    background-color: #b86b77;
+    background-color: rgb(64, 156, 69);
     font-weight: bold;
     color: white;
 }
 
-.modal:hover {
+#button:hover {
+    background-color: rgb(57, 126, 60);
+}
+
+.modal {
+    padding: 10px;
+    background: #c08081;
+    display: none;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    overflow: auto;
+}
+
+.modal-content {
     background-color: #c08081;
+    margin: 20% auto;
+    padding: 35px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    float: right;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    margin: -35px;
+    border: 1px solid rgb(206, 16, 16);
+    background: red;
+    padding: 1px;
+}
+
+.close:hover {
+    background: rgba(53, 51, 51, 0.8);
+    cursor: pointer;
+}
+
+.progressbar-outer {
+    height: 20px;
+    padding: 1px;
+    background-color: #333;
+    border-radius: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.progressbar-inner {
+    background-color: rgb(64, 156, 69) !important;
+    width: 30%;
+    height: 100%;
+    border-radius: 50px;
+
+}
+
+.notification-box {
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: #f4f7f8;
+    color: rgb(97, 96, 96);
+    max-width: 500px;
+    padding-left: 10px;
+    margin: 15px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.close-notification {
+    float: right;
+    font-weight: bold;
+    font-size: 28px;
+    color: grey;
+
+
+}
+
+.notification-box img {
+    height: 25px;
+    margin-right: 25px;
+}
+
+/* timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ccc;
+    border: 4px solid #3e8e41;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgb(114, 113, 113);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(114, 113, 113);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(114, 113, 113);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(114, 113, 113) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: rgb(114, 113, 113);
+    position: relative;
+    border-radius: 6px;
+}
+
+/* popup */
+#popup {
+    text-align: center;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 500px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 70px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -210px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 200px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.newsletter {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.popup-submit {
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    background-color: #3e8e41;
+    color: #f4f7f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-details input {
+    width: 250px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#tags {
+    margin: auto;
+}
+
+.tag {
+    height: 30px;
+    width: 80px;
+    padding: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    background-color: #3e8e41;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+}
+
+.para {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
